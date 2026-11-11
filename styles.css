@@ -458,6 +458,23 @@ body.in-hero .assist-bar { display: none; }
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; } }
 
+/* Made by All Inn Agency — footer imzası */
+.footer-bottom { align-items: center; }
+.ai-sig { display: block; margin: 0; padding: 0; line-height: 1; }
+.ai-sig[data-align="center"] { text-align: center; }
+.ai-sig[data-align="right"] { text-align: right; }
+.ai-sig a.ai-sig__link {
+  all: unset; display: inline-flex; align-items: center; gap: 6px; font-size: 11px; line-height: 1.2;
+  font-weight: 400; letter-spacing: 0.02em; text-transform: none; white-space: nowrap; color: inherit; opacity: 0.5;
+  cursor: pointer; -webkit-tap-highlight-color: transparent; transition: opacity 0.25s ease;
+}
+.ai-sig a.ai-sig__link:hover, .ai-sig a.ai-sig__link:focus-visible { opacity: 1; }
+.ai-sig a.ai-sig__link:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; border-radius: 2px; }
+.ai-sig svg.ai-sig__mark { width: 16px; height: 16px; flex: none; display: block; fill: currentColor; }
+.ai-sig span.ai-sig__name { font-weight: 600; }
+@media (max-width: 520px) { .footer-bottom { align-items: flex-start; } .footer-bottom .ai-sig { text-align: left; } }
+@media (prefers-reduced-motion: reduce) { .ai-sig a.ai-sig__link { transition: none; } }
+
 /* ---------- Booking assistant ---------- */
 .assist-bar {
   position: fixed; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); z-index: 45;
